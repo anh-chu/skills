@@ -11,6 +11,7 @@ org-specific IDs, and specific tool names so any agent with comparable integrati
 | [`release-kit`](release-kit/) | Create a polished, on-brand, print-ready release/launch kit (paged HTML → PDF) for a product change, feature launch, or GA. |
 | [`gtm-update`](gtm-update/) | Gather and synthesize the week's customer / GTM updates from email, chat, and calendar into a dated, paste-ready section. |
 | [`prd`](prd/) | Turn a chat discussion plus supporting context into a comprehensive, implementable PRD, then optionally publish it to a wiki. |
+| [`google-developers-style-guide`](google-developers-style-guide/) | Make agent writing clear, precise, and structured across both chat responses and files the agent writes or edits. Ships an on-demand skill and an always-on `AGENTS.md`. |
 
 ## Install
 
