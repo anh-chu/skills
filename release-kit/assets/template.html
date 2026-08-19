@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PRODUCT}} — Launch Briefing</title>
+<style>
+/* >>> Paste the entire contents of assets/kit.css here. It begins with the /*FONTS*/ marker
+       (fetch-fonts.py + embed.py inject the embedded @font-face rules into it), and its :root
+       block holds the BRAND TOKENS you swap for the real palette/fonts from Phase 4.
+       Add the logo: .brandlogo{ background-image:url("data:image/svg+xml;base64,..."); }
+       (and a .brandlogo.white variant for dark covers). <<< */
+</style>
+</head>
+<body>
+
+<!-- ===== COVER (brand-colored) ===== -->
+<section class="page" style="padding:0; background:var(--brand);">
+  <div style="position:absolute;inset:0;background:
+      repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px),
+      repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 1px,transparent 1px 22px);"></div>
+  <div style="position:absolute;top:0;left:0;right:0;height:6px;background:var(--grad);"></div>
+  <div style="position:relative;padding:16mm 13mm 18mm;min-height:297mm;display:flex;flex-direction:column;color:#fff;">
+    <div class="rhead" style="margin-bottom:0;"><span class="brandlogo white"></span></div>
+    <div style="margin-top:auto;">
+      <span class="eyebrow" style="background:rgba(255,255,255,.14);color:#fff;">{{EYEBROW}}</span>
+      <h1 style="color:#fff;font-size:62pt;font-weight:700;letter-spacing:-.03em;line-height:.98;margin:16px 0 0;">{{TITLE}}.</h1>
+      <div style="width:120px;height:5px;background:var(--grad);border-radius:3px;margin:22px 0 20px;"></div>
+      <p style="font-family:var(--font);font-size:14.5pt;line-height:1.45;color:rgba(255,255,255,.9);max-width:150mm;margin:0;">{{SUBTITLE}}</p>
+    </div>
+    <div style="margin-top:auto;padding-top:20px;border-top:1px solid rgba(255,255,255,.22);display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <!-- meta tiles: label + value -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== A CONTENT SECTION ===== -->
+<section class="page">
+  <div class="rhead"><span class="brandlogo"></span><div class="doc">{{PRODUCT}} · Launch Briefing</div></div>
+  <div class="shead">
+    <span class="eyebrow">01 · At a glance</span>
+    <h2>The change at a glance.</h2>
+    <p class="lead">One plain-language sentence on what's changing, when, and who it affects.</p>
+  </div>
+
+  <div class="grid3" style="margin-bottom:10px;">
+    <div class="card gray avoid-break"><div class="figbig">One.</div><h3 style="margin-top:8px;font-size:11.5pt;">Headline</h3><p style="margin:0;font-size:9.5pt;">Supporting detail.</p></div>
+    <div class="card gray avoid-break"><div class="figbig alt">1 mo.</div><h3 style="margin-top:8px;font-size:11.5pt;">Headline</h3><p style="margin:0;font-size:9.5pt;">Supporting detail.</p></div>
+    <div class="card gray avoid-break"><div class="figbig">Fast.</div><h3 style="margin-top:8px;font-size:11.5pt;">Headline</h3><p style="margin:0;font-size:9.5pt;">Supporting detail.</p></div>
+  </div>
+
+  <table class="ruled avoid-break">
+    <thead><tr><th style="width:24%;">Team</th><th>Your main action</th><th style="width:20%;">Where</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Marketing</strong></td><td>What they do</td><td class="to">Section 09</td></tr>
+    </tbody>
+  </table>
+
+  <figure class="avoid-break" style="margin-top:15px;">
+    <img src="{{IMG_HERO}}" alt="">
+    <figcaption><b>Caption lead.</b> One sentence of context.</figcaption>
+  </figure>
+
+  <div class="foot"><span>{{PRODUCT}}</span><span>01 · At a glance</span></div>
+</section>
+
+</body>
+</html>
